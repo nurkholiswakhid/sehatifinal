@@ -28,15 +28,16 @@ class MainActivity : AppCompatActivity() {
         CoroutineScope(Dispatchers.Main).launch {
             delay(2000)
 
-            if (preferences.session) {
-                val intent = Intent(this@MainActivity, BottomNavActivity::class.java)
-                startActivity(intent)
+            val intent = if (preferences.session) {
+                Intent(this@MainActivity, BottomNavActivity::class.java)
             } else {
-                val intent = Intent(this@MainActivity, LoginActivity::class.java)
-                startActivity(intent)
+                Intent(this@MainActivity, LoginActivity::class.java)
+            }.apply {
+                flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
             }
 
-
+            startActivity(intent)
+            finish() // Menutup MainActivity agar tidak bisa diakses lagi
         }
     }
 }
