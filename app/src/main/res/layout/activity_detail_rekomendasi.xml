@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".DetailRekomendasiActivity">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="35dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/roboto"
+        android:text="Rekomendasi"
+        android:textColor="@color/black12"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/textview33"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/roboto"
+        android:textColor="@color/black12"
+        android:text="Bagaimana Pengobatan Flu atau Influenza"
+        app:layout_constraintTop_toBottomOf="@id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/roboto"
+        android:text="Mauris eu ante lorem. Donec id lobortis dui. Nam id elit in sapien venenatis tincidunt. Maecenas sodales sodales sapien. Vivamus egestas mattis metus at dignissim. Pellentesque cursus elit pharetra, rutrum erat sed, accumsan ex. Cras fermentum aliquet risus maximus consequat. Suspendisse rutrum magna in dignissim fermentum. Nunc euismod nec metus sed ullamcorper. Suspendisse vel venenatis velit, vitae ultrices quam. Vestibulum vel augue ut mauris volutpat gravida vitae et lorem. Cras eu mauris luctus, auctor ipsum ut, laoreet metus.
+Nulla molestie porta enim, sit amet vulputate sapien blandit non. Proin sit amet placerat velit, vitae molestie nisl. Nunc eu leo eget tellus suscipit mollis. Integer blandit egestas suscipit. Mauris vel ante ex. Phasellus blandit bibendum venenatis. Vivamus pellentesque, mauris nec varius posuere, massa ex commodo sapien, non interdum ante diam in ipsum. Praesent nec convallis nisi. Duis mauris metus, ornare non urna ut, dictum ultrices neque. Vestibulum hendrerit ornare rutrum. Vivamus massa magna, gravida a ullamcorper in, ullamcorper a velit. Mauris lobortis pellentesque nulla, vel scelerisque massa gravida ut. Sed tempor ac nisl vitae pretium. Suspendisse lectus odio, mollis quis justo nec, dapibus porttitor velit. Aliquam cursus semper nibh nec luctus."
+        android:textColor="@color/grey49"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textview33" />
+</androidx.constraintlayout.widget.ConstraintLayout>
